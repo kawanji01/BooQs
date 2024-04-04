@@ -1,0 +1,47 @@
+//　変数はこちらに全てまとめる。 参考：https://qiita.com/roba4coding/items/39693359fa21b5afdc36
+
+/* colors */
+
+// $brand-black: #273132;
+$brand-black: #0D0D0D;
+
+/*$bg-color: #F8F8F4; */
+
+$bg-color: #f6f7f9;
+
+$bg-tab: #FCFCFC;
+$border-tab: #E0E0E0;
+
+$bg-modal: #e6ecf0;
+
+/*$brand-green: #5CB85C;*/
+//背景白のときのブランドグリーン。
+// nephritis
+$brand-green: #27ae60;
+
+$deep-green: #5CB85C;
+// $emerald-green: #34d49d;
+//背景黒のときのブランドグリーン
+//$bright-green: #A7DC4D;
+$bright-green: #0DFF92;
+$light-green: #2ecc71;
+
+$brand-orange: #FF9500;
+
+$brand-red: #EE5A5A;
+
+$text-black: #6E6E6E;
+
+$blue-deep: #009DFF;
+
+
+$correct: #009DFF;
+$false: #EE5A5A;
+
+
+// bootstrap3では用意されていたが、4で消え去ったので、移行した際に独自に再定義したカラー変数たち / 参考：https://github.com/twbs/bootstrap-sass/blob/master/assets/stylesheets/bootstrap/_variables.scss
+$gray-base: #000;
+$gray: lighten($gray-base, 33.5%);
+$gray-light: rgba(#d3d3d3, 1.0);
+$gray-lighter: lighten(#000, 93.5%);
+$state-danger-text: #a94442;
