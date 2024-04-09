@@ -1,6 +1,7 @@
 Rails.application.routes.draw do
-  root   "static_pages#home"
-  get  "/inquiry", to: "static_pages#inquiry"
+  scope '(:locale)', locale: /#{I18n.available_locales.map(&:to_s).join('|')}/ do
+    root   "static_pages#home"
+    get  "/inquiry", to: "static_pages#inquiry"
 
 =begin
   get    "/help",    to: "static_pages#help"
@@ -21,4 +22,5 @@ Rails.application.routes.draw do
   resources :relationships,       only: [:create, :destroy]
   get '/microposts', to: 'static_pages#home'
 =end
+  end
 end

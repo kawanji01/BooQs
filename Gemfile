@@ -27,6 +27,8 @@ gem 'meta-tags'
 gem 'http_accept_language'
 # 本番環境の特定の処理のログを確認するために利用
 gem 'slack-notifier'
+# 多言語化
+gem 'rails-i18n'
 
 group :development, :test do
   gem "debug",   "1.7.1", platforms: %i[ mri mingw x64_mingw ]
