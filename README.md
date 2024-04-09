@@ -1,35 +1,15 @@
-# Ruby on Rails チュートリアルのサンプルアプリケーション
+# 概要
+株式会社BooQsのコーポレートサイトです。
 
-これは、次の教材で作られたサンプルアプリケーションです。
-[*Ruby on Rails チュートリアル*](https://railstutorial.jp/)
-（第7版）
-[Michael Hartl](https://www.michaelhartl.com/) 著
+# セットアップ
 
-## ライセンス
+## Dockerをインストール
+- Macなら　https://matsuand.github.io/docs.docker.jp.onthefly/desktop/mac/install/
+- Windowsは分からないので誰か加筆よろしくお願いします。
 
-[Ruby on Rails チュートリアル](https://railstutorial.jp/)内にある
-ソースコードはMITライセンスとBeerwareライセンスのもとで公開されています。
-詳細は [LICENSE.md](LICENSE.md) をご覧ください。
 
-## 使い方
-
-このアプリケーションを動かす場合は、まずはリポジトリをフォークしてください。
-
-フォークしたリポジトリで、「Code」から「Codespaces」タブに移動し、
-「Create codespace on main」をクリックすると環境構築がスタートします。
-Railsサーバーが立ち上がり、シンプルブラウザが表示されるまでしばらくお待ちください。
-
-次に、データベースへのマイグレーションを実行します。
-
-```
-$ rails db:migrate
-```
-
-最後に、テストを実行してうまく動いているかどうか確認してください。
-
-```
-$ rails test
-```
-
-詳しくは、[*Ruby on Rails チュートリアル*](https://railstutorial.jp/)
-を参考にしてください。
+## セットアップ方法
+- コンテナをビルド： `docker-compose build`
+- コンテナの起動： `docker-compose up`
+- DBを作成： `docker-compose run web rails db:create`
+- DBをmigrate: `docker-compose run web rails db:migrate`
