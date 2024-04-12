@@ -8,7 +8,7 @@ class ApplicationController < ActionController::Base
   end
 
   def locale
-    @locale = params[:locale] || I18n.default_locale
+    @locale = params[:locale] || I18n.default_locale.to_s
     @locale = @locale == 'ja' ? 'ja' : 'en'
   end
 
