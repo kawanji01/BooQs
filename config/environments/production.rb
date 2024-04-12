@@ -1,4 +1,4 @@
-require "active_support/core_ext/integer/time"
+require 'active_support/core_ext/integer/time'
 
 Rails.application.configure do
   # Settings specified here will take precedence over those in config/application.rb.
@@ -25,8 +25,6 @@ Rails.application.configure do
   # config.public_file_server.enabled = ENV["RAILS_SERVE_STATIC_FILES"].present?
   # Dockerでデプロイするので。ref: https://zenn.dev/takuty/articles/b7aa6164fc85bb
   config.public_file_server.enabled = true
-
-  Rails.application.config.hosts << "www.booqs.net"
 
   # Compress CSS using a preprocessor.
   # config.assets.css_compressor = :sass
@@ -74,7 +72,9 @@ Rails.application.configure do
   # Set this to true and configure the email server for immediate delivery to raise delivery errors.
   config.action_mailer.raise_delivery_errors = true
   config.action_mailer.delivery_method = :smtp
-  host = '<あなたのRenderアプリ名>.onrender.com'
+  # config.hosts << 'www.booqs.net'
+  config.hosts << /\.booqs\.net$/
+  host = 'www.booqs.net'
   config.action_mailer.default_url_options = { host: host }
   ActionMailer::Base.smtp_settings = {
     :port           => 587,
@@ -99,7 +99,7 @@ Rails.application.configure do
   # require "syslog/logger"
   # config.logger = ActiveSupport::TaggedLogging.new(Syslog::Logger.new "app-name")
 
-  if ENV["RAILS_LOG_TO_STDOUT"].present?
+  if ENV['RAILS_LOG_TO_STDOUT'].present?
     logger           = ActiveSupport::Logger.new(STDOUT)
     logger.formatter = config.log_formatter
     config.logger    = ActiveSupport::TaggedLogging.new(logger)
