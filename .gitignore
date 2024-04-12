@@ -41,3 +41,4 @@ dump.rdb
 
 .idea/
 .env
+./config/master.key

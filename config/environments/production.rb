@@ -26,6 +26,8 @@ Rails.application.configure do
   # Dockerでデプロイするので。ref: https://zenn.dev/takuty/articles/b7aa6164fc85bb
   config.public_file_server.enabled = true
 
+  Rails.application.config.hosts << "www.booqs.net"
+
   # Compress CSS using a preprocessor.
   # config.assets.css_compressor = :sass
 
