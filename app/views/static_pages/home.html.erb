@@ -1,7 +1,7 @@
 <% set_meta_tags canonical: root_url(locale: @locale),
-                 twitter: {card: 'summary_large_image'},
-                 alternate: {"en" => root_url(locale: 'en'),
-                             "ja" => root_url(locale: 'ja')} %>
+                 twitter: { card: 'summary_large_image' },
+                 alternate: { "en" => root_url(locale: 'en'),
+                              "ja" => root_url(locale: 'ja') } %>
 
 
 
@@ -9,155 +9,16 @@
   <div class="w-100 background-black">
     <div class="wrapper">
 
-
-      <div class="px-4">
-        <div class="w-100 d-block py-5"></div>
-        <h1 class="top-heading pt-5 text-white text-center mb-3 fw-bold"><%= t('shared.company.name') %></h1>
-
-        <!--
-        <h3 class="text-white font-weight-bold text-center my-4">東京外国語大学の現役生/卒業生による<br>オンライン英語個別指導塾</h3>
-        <h5 class="text-white text-center">中学高校生の学習サポート/入試対策から大人の学び直しまで</h5>
-        -->
-      </div>
-
-      <div class="w-100 d-block py-5"></div>
-      <!-- First START -->
-      <div class="row mt-5 px-4">
-        <div class="col-xl-6">
-          <h1 class="top-heading pt-5 text-white text-left lh-base">
-            文明に貢献する<br>事業をつくる
-          </h1>
-          <div class="text-light mb-4">
-            <p>我々は、技術でもって、少しでも人類の文明に貢献できる事業を目指します。</p>
-            <p>小さくてもいいので、ユーザーがおのおのの人生を振り返ったときに、あのプロダクト、あのサービスがあってよかったと思っていただけるものがつくりたい。</p>
-          </div>
-
-          <%= link_to 'https://note.com/kawanjin01/n/n88ded62f461b', target: '_blank', rel: 'noopener' do %>
-            <div class="btn btn btn-success rounded-pill fw-bold w-100 my-5">
-              ブログ
-            </div>
-          <% end %>
-
-        </div>
-
-        <div class="col-xl-6 mb-5">
-          <img src="<%= "https://tuflingual.s3.ap-northeast-1.amazonaws.com/assets/lp/undraw_connected_world_wuay.svg" %>" class="img-fluid" alt="">
-        </div>
-      </div>
-      <!-- First END -->
+      <%= render 'static_pages/lp/home' %>
 
 
-      <!-- Third START -->
-      <div class="row mt-5 px-4">
-        <div class="col-xl-6">
-          <h1 class="top-heading pt-5 text-white text-left lh-base">
-            絶対に忘れない<br>
-            辞書＆単語帳<br>
-            DiQt（ディクト）
-          </h1>
-          <div class="text-light mb-4">
-            <p>オンラインなので自宅や学校から受講ができ、他社よりも安い授業料で質の高い授業を受けられます。</p>
-            <p>中学高校生の学習サポートから大人の方の学び直しまで、授業は完全にオーダーメイドでご対応します。</p>
-          </div>
-
-        </div>
-
-        <div class="col-xl-6 mb-5">
-          <img src="<%= "https://diqt.s3.ap-northeast-1.amazonaws.com/assets/images/lp/lp_mockup_1_ja.png" %>" class="img-fluid" alt="">
-        </div>
-
-      </div>
-      <!-- Third END -->
+      <%= render 'static_pages/lp/services' %>
 
 
+      <%= render 'static_pages/lp/company' %>
 
 
-
-      <div class="row mt-5 px-4 justify-content-md-center">
-        <div class="col-xl-8">
-          <h1 class="top-heading pt-5 text-white text-left font-weight-bold">
-            会社情報
-          </h1>
-          <div class="text-light">
-            <p>TUFLINGUAL（タフリンガル）は、2022年12月に立ち上がった東京外国語大学の学生によるオンライン塾です。</p>
-            <p>東京外国語大学には数多くの英語を得意とする学生が在籍しています。</p>
-            <p>東京外国語大学の学生の英語力は、世間一般の有名大学に比べてレベルが高く、実用的です。</p>
-            <p>そんな東京外国語大学の学生たちが講師として在籍するオンライン塾がTUFLINGUALです。</p>
-            <p>外大生の中でも選りすぐりの講師を集め、質の高い授業を提供します。</p>
-          </div>
-        </div>
-      </div>
-
-      <div class="row mt-5 px-4 justify-content-md-center">
-        <div class="col-xl-8">
-          <h2 class="top-heading pt-5 text-white text-left font-weight-bold">
-            代表者
-          </h2>
-          <div class="text-light">
-            <p>TUFLINGUAL（タフリンガル）は、2022年12月に立ち上がった東京外国語大学の学生によるオンライン塾です。</p>
-            <p>東京外国語大学には数多くの英語を得意とする学生が在籍しています。</p>
-            <p>東京外国語大学の学生の英語力は、世間一般の有名大学に比べてレベルが高く、実用的です。</p>
-            <p>そんな東京外国語大学の学生たちが講師として在籍するオンライン塾がTUFLINGUALです。</p>
-            <p>外大生の中でも選りすぐりの講師を集め、質の高い授業を提供します。</p>
-          </div>
-        </div>
-      </div>
-
-
-
-
-
-
-      <div class="row mt-5 px-4 justify-content-md-center">
-        <div class="col-xl-8">
-          <h1 class="top-heading pt-5 text-white text-left font-weight-bold">
-            沿革
-          </h1>
-          <div class="text-light">
-            <p>TUFLINGUAL（タフリンガル）は、2022年12月に立ち上がった東京外国語大学の学生によるオンライン塾です。</p>
-            <p>東京外国語大学には数多くの英語を得意とする学生が在籍しています。</p>
-            <p>東京外国語大学の学生の英語力は、世間一般の有名大学に比べてレベルが高く、実用的です。</p>
-            <p>そんな東京外国語大学の学生たちが講師として在籍するオンライン塾がTUFLINGUALです。</p>
-            <p>外大生の中でも選りすぐりの講師を集め、質の高い授業を提供します。</p>
-          </div>
-        </div>
-      </div>
-
-
-      <div class="row mt-5 px-4 justify-content-md-center">
-        <div class="col-xl-8">
-          <h1 class="top-heading pt-5 text-white text-left font-weight-bold">
-            お問い合わせ
-          </h1>
-          <div class="text-light">
-            <p>TUFLINGUAL（タフリンガル）は、2022年12月に立ち上がった東京外国語大学の学生によるオンライン塾です。</p>
-            <%= form_with url: inquiry_path, method: :get, local: true, class: 'mt-5' do |f| %>
-              <%= f.label :name, t('static_pages.name'), class: "text-left small text-white" %>
-              <%= f.text_field :name, class: "form-control mb-4", placeholder: 'お名前をご入力ください。', required: true %>
-
-              <%= f.label :email, t('static_pages.email'), class: "text-left small text-white" %>
-              <%= f.email_field :email, class: "form-control mb-4", placeholder: 'メールアドレスをご入力ください。', required: true %>
-
-              <%= f.label :phone, t('static_pages.phone'), class: "text-left small text-white" %>
-              <%= f.text_field :phone, class: "form-control mb-4", placeholder: '電話番号をご入力ください。', required: true %>
-
-              <%= f.label :inquiry, "お問い合わせ内容", class: "text-left small text-white" %>
-              <%= f.select :inquiry, [['資料請求/お問い合わせ', '資料請求/お問い合わせ'], ['入塾お申し込み', '入塾お申し込み'], ['体験授業のお申し込み', '体験授業のお申し込み'],
-                                      ['無料相談ご希望', '無料相談ご希望'],], {}, { class: 'form-control mb-4' } %>
-
-              <%= f.label :message, "メッセージ", class: "text-left small text-white" %>
-              <%= f.text_area :message, class: "form-control mb-4", placeholder: '任意', rows: 4 %>
-
-
-              <%= f.submit "申し込む", class: "btn btn-lg btn-light-green w-100 rounded-pill modal-show-signup font-weight-bold mt-4", data: { disable_with: '送信中...' } %>
-
-            <% end %>
-          </div>
-        </div>
-      </div>
-
-
-
+      <%= render 'static_pages/lp/contact' %>
 
 
       <div class="w-100 d-block py-5"></div>
@@ -165,9 +26,6 @@
       <div class="w-100 d-block py-5"></div>
       <div class="w-100 d-block py-5"></div>
       <div class="w-100 d-block py-5"></div>
-
-
     </div>
-
   </div>
 </div>

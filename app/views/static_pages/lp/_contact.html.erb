@@ -1,0 +1,38 @@
+<div class="px-4" id="contact">
+  <div class="w-100 d-block py-5"></div>
+  <!--
+  <h1 class="top-heading pt-5 text-white text-center mb-3 fw-bold"> <#%= t('layouts.company') %></h1>
+  -->
+</div>
+
+<div class="row mt-5 px-4 justify-content-md-center">
+  <div class="col-xl-8">
+    <h1 class="top-heading pt-5 text-white text-left">
+      お問い合わせ
+    </h1>
+    <div class="px-3">
+      <%= form_with url: inquiry_path, method: :post, local: true, class: 'mt-5' do |f| %>
+
+        <%= f.label :name, t('lp.name'), class: "text-left small text-white" %>
+        <%= f.text_field :name, class: "form-control mb-4", placeholder: t('lp.name_placeholder'), required: true %>
+
+        <%= f.label :company, t('lp.company_name'), class: "text-left small text-white" %>
+        <%= f.text_field :company, class: "form-control mb-4", placeholder: t('lp.company_name_placeholder'), required: true %>
+
+        <%= f.label :email, t('static_pages.email'), class: "text-left small text-white" %>
+        <%= f.email_field :email, class: "form-control mb-4", placeholder: 'メールアドレスをご入力ください。', required: true %>
+
+        <%= f.label :phone, t('static_pages.phone'), class: "text-left small text-white" %>
+        <%= f.text_field :phone, class: "form-control mb-4", placeholder: '電話番号をご入力ください。', required: true %>
+
+        <%= f.label :inquiry_type, "お問い合わせ内容", class: "text-left small text-white" %>
+        <%= f.select :inquiry_type, [['BooQs社のアプリについて', 'BooQs社のアプリについて'], ['その他', 'その他'], ['営業に関するお問い合わせ', '営業に関するお問い合わせ'],], {}, { class: 'form-control mb-4' } %>
+
+        <%= f.label :message, "メッセージ", class: "text-left small text-white" %>
+        <%= f.text_area :message, class: "form-control mb-4", placeholder: '任意', rows: 4 %>
+
+        <%= f.submit "お問い合わせ", class: "btn btn-success btn-light-green w-100 rounded-pill modal-show-signup fw-bold mt-4", data: { disable_with: '送信中...' } %>
+      <% end %>
+    </div>
+  </div>
+</div>

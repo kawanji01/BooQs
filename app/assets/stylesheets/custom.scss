@@ -7,15 +7,16 @@
 $gray-medium-light: #eaeaea;
 
 @mixin box_sizing {
-  -moz-box-sizing:    border-box;
+  -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
-  box-sizing:         border-box;
+  box-sizing: border-box;
 }
 
 /* universal */
 
 body {
   padding-top: 60px;
+
   &.background-black {
     background-color: $brand-black;
   }
@@ -28,7 +29,6 @@ body.ja {
 }
 
 
-
 section {
   overflow: auto;
 }
@@ -39,6 +39,7 @@ textarea {
 
 .center {
   text-align: center;
+
   h1 {
     margin-bottom: 10px;
   }
@@ -77,18 +78,22 @@ p {
 .navbar-inverse {
   background-color: $brand-black;
   border-color: $brand-black;
+
   .navbar-brand {
     color: white;
     font-size: 1.8em;
+
     &:hover {
       color: white;
       text-decoration: none;
     }
   }
+
   .navbar-nav {
     li {
       a {
         color: white;
+
         &:hover {
           color: white;
           text-decoration: none;
@@ -107,6 +112,7 @@ p {
   letter-spacing: -1px;
   padding-top: 9px;
   font-weight: bold;
+
   &:hover {
     color: white;
     text-decoration: none;
@@ -120,18 +126,23 @@ footer {
   padding-top: 5px;
   border-top: 1px solid $gray-medium-light;
   color: $gray-light;
+
   a {
     color: $gray;
+
     &:hover {
       color: $gray-darker;
     }
   }
+
   small {
     float: left;
   }
+
   ul {
     float: right;
     list-style: none;
+
     li {
       float: left;
       margin-left: 15px;
@@ -146,9 +157,11 @@ footer {
       float: none;
       margin-bottom: 1em;
     }
+
     ul {
       float: none;
       padding: 0;
+
       li {
         float: none;
         margin-left: 0;
@@ -172,18 +185,22 @@ aside {
   section.user_info {
     margin-top: 20px;
   }
+
   section {
     padding: 10px 0;
     margin-top: 20px;
+
     &:first-child {
       border: 0;
       padding-top: 0;
     }
+
     span {
       display: block;
       margin-bottom: 3px;
       line-height: 1;
     }
+
     h1 {
       font-size: 1.4em;
       text-align: left;
@@ -207,20 +224,24 @@ aside {
   overflow: auto;
   margin-top: 0;
   padding: 0;
+
   a {
     float: left;
     padding: 0 10px;
     border-left: 1px solid $gray-lighter;
     color: gray;
+
     &:first-child {
       padding-left: 0;
       border: 0;
     }
+
     &:hover {
       text-decoration: none;
       color: blue;
     }
   }
+
   strong {
     display: block;
   }
@@ -229,9 +250,11 @@ aside {
 .user_avatars {
   overflow: auto;
   margin-top: 10px;
+
   .gravatar {
     margin: 1px 1px;
   }
+
   a {
     padding: 0;
   }
@@ -256,6 +279,7 @@ input {
 
 #error_explanation {
   color: red;
+
   ul {
     color: red;
     margin: 0 0 30px 0;
@@ -264,6 +288,7 @@ input {
 
 .field_with_errors {
   @extend .has-error;
+
   .form-control {
     color: $state-danger-text;
   }
@@ -272,6 +297,7 @@ input {
 .checkbox {
   margin-top: -10px;
   margin-bottom: 10px;
+
   span {
     margin-left: 20px;
     font-weight: normal;
@@ -294,6 +320,7 @@ input {
 .users {
   list-style: none;
   margin: 0;
+
   li {
     overflow: auto;
     padding: 10px 0;
@@ -306,27 +333,33 @@ input {
 .microposts {
   list-style: none;
   padding: 0;
+
   li {
     padding: 10px 0;
     border-top: 1px solid #e8e8e8;
   }
+
   .user {
     margin-top: 5em;
     padding-top: 0;
   }
+
   .content {
     display: block;
     margin-left: 60px;
+
     img {
       display: block;
       padding: 5px 0;
     }
   }
+
   .timestamp {
     color: $gray-light;
     display: block;
     margin-left: 60px;
   }
+
   .gravatar {
     float: left;
     margin-right: 10px;
@@ -343,7 +376,31 @@ aside {
 
 span.image {
   margin-top: 10px;
+
   input {
     border: 0;
   }
 }
+
+.table {
+  &.background-black {
+    --bs-table-bg: $brand-black; /* 背景色を黒に設定 */
+    --bs-table-color: white; /* 文字色を白に設定 */
+    --bs-table-border-color: gray; /* 境界線の色をグレーに設定 (オプショナル) */
+  }
+}
+
+/* 上部ボーダーを消すスタイル */
+.table.no-top-border {
+  border-collapse: collapse;
+  tr {
+    th {
+      border-top: none;
+    }
+    td {
+      border-top: none;
+    }
+  }
+}
+
+

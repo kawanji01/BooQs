@@ -1,0 +1,50 @@
+<div class="px-4" id="services">
+  <div class="w-100 d-block py-5"></div>
+  <!--
+  <h1 class="top-heading pt-5 text-white text-center mb-3 fw-bold" id="services"> <#%= t('layouts.services') %></h1>
+  -->
+</div>
+
+<div class="row mt-5 px-4">
+  <div class="col-xl-6">
+    <h1 class="top-heading pt-5 text-white text-left lh-base">
+      絶対に忘れない<br>
+      辞書＆単語帳<br>
+      DiQt（ディクト）
+    </h1>
+    <div class="text-light mb-4">
+      <p>DiQtは、語学者の抱える『語彙の忘却』という課題を解決する辞書＆単語帳サービスです。</p>
+      <p>７０言語以上の辞書をご用意しており、単語帳としても１０００万以上の累計解答数がございます。</p>
+    </div>
+
+    <%= link_to "https://www.diqt.net/#{@locale}", target: '_blank', rel: 'noopener' do %>
+      <div class="btn btn btn-success rounded-pill fw-bold w-100 my-4">
+        <i class="far fa-browser me-2"></i><%= t('lp.web_app') %>
+      </div>
+    <% end %>
+
+    <%= link_to 'https://apps.apple.com/jp/app/%E5%BF%98%E3%82%8C%E3%81%AA%E3%81%84%E8%BE%9E%E6%9B%B8-%E5%8D%98%E8%AA%9E%E5%B8%B3-%E3%83%87%E3%82%A3%E3%82%AF%E3%83%88/id1594559036?uo=4', target: '_blank', rel: 'noopener' do %>
+      <div class="btn btn btn-success rounded-pill fw-bold w-100 my-4">
+        <i class="fab fa-apple me-2"></i><%= t('lp.ios_app') %>
+      </div>
+    <% end %>
+
+    <%= link_to 'https://play.google.com/store/apps/details?id=com.booqs.booqs_mobile&hl=ja', target: '_blank', rel: 'noopener' do %>
+      <div class="btn btn btn-success rounded-pill fw-bold w-100 my-4">
+        <i class="fab fa-android me-2"></i><%= t('lp.android_app') %>
+      </div>
+    <% end %>
+
+    <%= link_to 'https://chromewebstore.google.com/detail/%E8%AA%BF%E3%81%B9%E3%81%9F%E3%82%89%E5%BF%98%E3%82%8C%E3%81%AA%E3%81%84%E8%BE%9E%E6%9B%B8-%E3%83%87%E3%82%A3%E3%82%AF%E3%83%88/khgjdchimekphdebkmcknjkphkbpbpkj?hl=ja&authuser=0', target: '_blank', rel: 'noopener' do %>
+      <div class="btn btn btn-success rounded-pill fw-bold w-100 my-4">
+        <i class="fab fa-chrome me-2"></i><%= t('lp.chrome_extension') %>
+      </div>
+    <% end %>
+
+  </div>
+
+  <div class="col-xl-6 mb-5">
+    <img src="<%= "https://diqt.s3.ap-northeast-1.amazonaws.com/assets/images/lp/lp_mockup_1_ja.png" %>" class="img-fluid" alt="">
+  </div>
+
+</div>

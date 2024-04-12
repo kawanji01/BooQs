@@ -1,7 +1,7 @@
 Rails.application.routes.draw do
   scope '(:locale)', locale: /#{I18n.available_locales.map(&:to_s).join('|')}/ do
     root   "static_pages#home"
-    get  "/inquiry", to: "static_pages#inquiry"
+    post  "/inquiry", to: "static_pages#inquiry"
 
 =begin
   get    "/help",    to: "static_pages#help"

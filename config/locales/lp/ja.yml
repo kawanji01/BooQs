@@ -1,0 +1,10 @@
+ja:
+  lp:
+    web_app: 'Webアプリ'
+    ios_app: 'iOSアプリ'
+    android_app: 'Androidアプリ'
+    chrome_extension: 'Chrome拡張機能'
+    name: 'お名前'
+    name_placeholder: 'お名前を入力してください'
+    company_name: '会社名'
+    company_name_placeholder: '会社名を入力してください'

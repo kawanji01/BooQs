@@ -8,22 +8,23 @@
       <% end %>
     </div>
 
-    <nav>
-      <div class="navbar-header">
-        <button id="hamburger" type="button" class="navbar-toggle collapsed">
-          <span class="sr-only">Toggle navigation</span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-        </button>
-      </div>
-      <ul id="navbar-menu"
-          class="nav navbar-nav navbar-right collapse navbar-collapse">
-        <li><%= link_to "ホーム", root_path %></li>
-        <li><%= link_to "サービス", root_path %></li>
-        <li><%= link_to "会社情報", root_path %></li>
-        <li><%= link_to "お問い合わせ", root_path %></li>
-      </ul>
-    </nav>
+
+      <nav>
+        <div class="navbar-header">
+          <button id="hamburger" type="button" class="navbar-toggle collapsed">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+        </div>
+        <ul id="navbar-menu"
+            class="nav navbar-nav navbar-right collapse navbar-collapse">
+          <li><%= link_to t('layouts.home'), root_path, id: 'scroll-button-home' %></li>
+          <li><%= link_to t('layouts.services'), root_path, id: 'scroll-button-services' %></li>
+          <li><%= link_to t('layouts.company'), root_path, id: 'scroll-button-company' %></li>
+          <li><%= link_to t('layouts.contact'), root_path, id: 'scroll-button-contact' %></li>
+        </ul>
+      </nav>
   </div>
 </header>
