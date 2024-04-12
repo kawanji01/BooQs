@@ -3,11 +3,12 @@ require 'active_support/core_ext/integer/time'
 Rails.application.configure do
   # Settings specified here will take precedence over those in config/application.rb.
 
+  # config.hosts << 'www.booqs.net'
+  Rails.application.config.hosts << /.*\.booqs\.net/
+
+
   # Code is not reloaded between requests.
   config.cache_classes = true
-
-  # config.hosts << 'www.booqs.net'
-  config.hosts << /\.booqs\.net$/
   # Eager load code on boot. This eager loads most of Rails and
   # your application in memory, allowing both threaded web servers
   # and those relying on copy on write to perform better.
@@ -74,7 +75,7 @@ Rails.application.configure do
   # Set this to true and configure the email server for immediate delivery to raise delivery errors.
   config.action_mailer.raise_delivery_errors = true
   config.action_mailer.delivery_method = :smtp
-  host = 'www.booqs.net'
+  host = 'https://www.booqs.net'
   config.action_mailer.default_url_options = { host: host }
   ActionMailer::Base.smtp_settings = {
     :port           => 587,
