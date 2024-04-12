@@ -8,8 +8,12 @@ default: &default
 
 development:
   <<: *default
-  database: myapp_development
+  database: booqs_development
 
 test:
   <<: *default
-  database: myapp_test
+  database: booqs_test
+
+production:
+  <<: *default
+  database: booqs_production
