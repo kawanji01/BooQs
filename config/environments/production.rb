@@ -3,8 +3,7 @@ require 'active_support/core_ext/integer/time'
 Rails.application.configure do
   # Settings specified here will take precedence over those in config/application.rb.
 
-  # config.hosts << 'www.booqs.net'
-  config.hosts << /.*\.booqs\.net/
+  config.hosts << '.booqs.net'
 
 
   # Code is not reloaded between requests.
@@ -45,7 +44,7 @@ Rails.application.configure do
   # config.action_dispatch.x_sendfile_header = "X-Accel-Redirect" # for NGINX
 
   # アップロードされたファイルをAWSに保存する
-  config.active_storage.service = :amazon
+  # config.active_storage.service = :amazon
 
   # Mount Action Cable outside main process or domain.
   # config.action_cable.mount_path = nil
@@ -77,14 +76,14 @@ Rails.application.configure do
   config.action_mailer.delivery_method = :smtp
   host = 'https://www.booqs.net'
   config.action_mailer.default_url_options = { host: host }
-  ActionMailer::Base.smtp_settings = {
-    :port           => 587,
-    :address        => 'smtp.mailgun.org',
-    :user_name      => ENV['MAILGUN_SMTP_LOGIN'],
-    :password       => ENV['MAILGUN_SMTP_PASSWORD'],
-    :domain         => host,
-    :authentication => :plain,
-  }
+  #ActionMailer::Base.smtp_settings = {
+  #  :port           => 587,
+  #  :address        => 'smtp.mailgun.org',
+  #  :user_name      => ENV['MAILGUN_SMTP_LOGIN'],
+  #  :password       => ENV['MAILGUN_SMTP_PASSWORD'],
+  #  :domain         => host,
+  #  :authentication => :plain,
+  #}
 
   # Enable locale fallbacks for I18n (makes lookups for any locale fall back to
   # the I18n.default_locale when a translation cannot be found).

@@ -6,6 +6,6 @@ module BooQs
   class Application < Rails::Application
     config.load_defaults 7.0
     config.active_storage.variant_processor = :mini_magick
-    config.hosts << 'www.booqs.net'
+    config.hosts << '.booqs.net'
   end
 end
