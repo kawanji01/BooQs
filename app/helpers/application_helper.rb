@@ -9,4 +9,35 @@ module ApplicationHelper
       "#{page_title} | #{base_title}"                 # 文字列の結合
     end
   end
+
+
+  def default_meta_tags(locale)
+    {
+      site: t('shared.company.name', locale: locale),
+      title: t('shared.company.name', locale: locale),
+      reverse: true,
+      charset: 'utf-8',
+      #description: t('application.description'),
+      #keywords: t('application.keywords'),
+      canonical: request.original_url,
+      separator: '|',
+      icon: [
+        { href: "#{IMAGES_URL}/favicons/favicon-32x32.png" },
+        { href: DIQT_ICON, rel: 'apple-touch-icon', sizes: '180x180', type: 'image/jpg' },
+      ],
+      og: {
+        site_name: :site,
+        title: :title,
+        description: :description,
+        type: 'website',
+        url: request.original_url,
+        image: "#{MAIN_IMAGES_URL}/OGP_BooQs.png",
+        locale: locale,
+      },
+      twitter: {
+        card: 'summary',
+      }
+    }
+  end
+
 end

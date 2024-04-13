@@ -1,6 +1,9 @@
 <!DOCTYPE html>
 <html>
 <head>
+  <!-- http://vdeep.net/rubyonrails-meta-tags-seo -->
+  <%= display_meta_tags(default_meta_tags(@locale)) %>
+
   <title><%= full_title(yield(:title)) %></title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta charset="utf-8">
@@ -11,6 +14,9 @@
   <%= javascript_importmap_tags %>
 
   <%= render 'layouts/font' %>
+  <!-- favicon -->
+  <%= render 'layouts/favicon' %>
+
 </head>
 <body class="<%= 'background-black' if @is_black %> <%= @locale %>">
 <%= render 'layouts/header' %>
