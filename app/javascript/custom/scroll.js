@@ -18,6 +18,11 @@ document.addEventListener("turbo:load", function() {
         scrollToElement('services-page');
     });
 
+    document.getElementById('scroll-button-news-page').addEventListener('click', function(event) {
+        event.preventDefault();
+        scrollToElement('news-page');
+    });
+
     document.getElementById('scroll-button-company-page').addEventListener('click', function(event) {
         event.preventDefault();
         scrollToElement('company-page');
