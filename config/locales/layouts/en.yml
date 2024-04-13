@@ -2,5 +2,6 @@ en:
   layouts:
     home: 'Home'
     services: 'Services'
+    news: 'News'
     company: 'Company'
     contact: 'Contact'

@@ -1,6 +1,7 @@
 class StaticPagesController < ApplicationController
   def home
     @is_black = true
+    @bulletins = Bulletin.all.order(announcement_date: :desc)
   end
 
   def inquiry

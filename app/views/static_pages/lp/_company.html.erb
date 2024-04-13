@@ -7,7 +7,7 @@
 <div class="row mt-5 px-4 justify-content-md-center">
   <div class="col-xl-8">
     <h1 class="top-heading pt-5 text-white text-left">
-      <%= t('layouts.company')  %>
+      <%= t('layouts.company') %>
     </h1>
 
     <table class="table background-black no-top-border">
@@ -32,10 +32,6 @@
         <th scope="row">電話番号</th>
         <td>090-3510-4353</td>
       </tr>
-      <tr>
-        <th scope="row">X</th>
-        <td>@kawanji01</td>
-      </tr>
       </tbody>
     </table>
   </div>
@@ -52,8 +48,31 @@
           相川真司
         </h3>
         <div class="text-light">
-          <p>高校在学中に週刊少年ジャンプで漫画賞を受賞。卒業後、業務用システムの開発を請け負う株式会社ティーワイシーに就職。 2019年に株式会社BooQs設立し、自身がエンジニアとして英語の技術ドキュメントと格闘する中で痛感した英語の語彙習得と忘却の課題を解決するために「忘れない辞書＆単語帳アプリ」としてDiQt（ディクト）を開発し、Web版・モバイルアプリ版・Chrome拡張版をリリースする。2022年度総務省主催異能vationプログラム「ジェネレーションアワード」ノミネート。</p>
+          <p>高校在学中に週刊少年ジャンプで漫画賞を受賞。卒業後、業務用システムの開発を請け負う株式会社ティーワイシーに就職。
+            2019年に株式会社BooQs設立し、自身がエンジニアとして英語の技術ドキュメントと格闘する中で痛感した英語の語彙習得と忘却の課題を解決するために「忘れない辞書＆単語帳アプリ」としてDiQt（ディクト）を開発し、Web版・モバイルアプリ版・Chrome拡張版をリリースする。2022年度総務省主催異能vationプログラム「ジェネレーションアワード」ノミネート。</p>
         </div>
+
+        <div class="d-flex flex-row mb-3">
+
+          <%= link_to 'https://note.com/kawanjin01',
+                      class: 'btn btn-outline-light btn-sm mt-3', target: '_blank', rel: 'noopener' do %>
+            Note <i class="far fa-external-link ms-2"></i>
+          <% end %>
+
+
+          <%= link_to 'https://twitter.com/kawanji01',
+                      class: 'btn btn-outline-light btn-sm mt-3 mx-3', target: '_blank', rel: 'noopener' do %>
+            X <i class="far fa-external-link ms-2"></i>
+          <% end %>
+
+          <%= link_to 'https://www.facebook.com/kawanji01',
+                      class: 'btn btn-outline-light btn-sm mt-3', target: '_blank', rel: 'noopener' do %>
+            Facebook <i class="far fa-external-link ms-2"></i>
+          <% end %>
+
+        </div>
+
+
       </div>
     </div>
 

@@ -1,0 +1,30 @@
+<div class="px-4" id="news-page">
+  <div class="w-100 d-block py-5"></div>
+  <!--
+  <h1 class="top-heading pt-5 text-white text-center mb-3 fw-bold"> <#%= t('layouts.company') %></h1>
+  -->
+</div>
+<div class="row mt-5 px-4 justify-content-md-center">
+  <div class="col-xl-8">
+    <h1 class="top-heading pt-5 text-white text-left">
+      <%= t('layouts.news') %>
+    </h1>
+
+    <% @bulletins.each do |bulletin| %>
+
+      <div class="my-4 text-white">
+        <p>
+          ・<%= bulletin.announcement_date.strftime("%Y年%m月%d日") %> :
+          <% if bulletin.url.present? %>
+            <%= link_to bulletin.title, bulletin.url, target: '_blank', rel: 'noopener', class: 'link-light link-offset-2 link-underline' %>
+          <% else %>
+            <%= bulletin.title %>
+          <% end %>
+        </p>
+
+      </div>
+    <% end %>
+
+  </div>
+</div>
+
