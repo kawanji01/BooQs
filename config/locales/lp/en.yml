@@ -1,10 +1,27 @@
 en:
   lp:
+    first_title_html: 'Create a business<br>that contributes to civilization'
+    first_description_html: |
+      <p>We aim to create a business that can contribute to human civilization even a little bit with technology.</p>
+      <p>Even if it's small, we will create something that users will be glad to have when they look back on their lives.</p>
+    second_title_html: 'Unforgettable<br>Dictionary & Vocabulary Book<br>DiQt'
+    second_description_html: |
+      <p>DiQt is a dictionary & vocabulary book service that solves the problem of "vocabulary forgetting" faced by language learners.</p>
+      <p>We offer dictionaries in over 70 languages and have over 10 million cumulative answer counts as a vocabulary book.</p>
+    blog: 'Blog'
     web_app: 'Web App'
     ios_app: 'iOS App'
     android_app: 'Android App'
     chrome_extension: 'Chrome Extension'
+    history: 'History'
     name: 'Name'
     name_placeholder: 'Enter your name here'
     company_name: 'Company Name'
     company_name_placeholder: 'Enter your company name here'
+    optional: 'Optional'
+    inquiry_type: 'Inquiry Type'
+    about_apps: 'About Our Apps'
+    others: 'Others'
+    about_sales: 'Inquiry about Sales'
+    inquiry_content: 'Inquiry Content'
+    inquire: 'Inquire'

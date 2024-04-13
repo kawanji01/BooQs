@@ -1,10 +1,27 @@
 ja:
   lp:
+    first_title_html: '文明に貢献する<br>事業をつくる'
+    first_description_html: |
+      <p>我々は、技術でもって、少しでも人類の文明に貢献できる事業を目指します。</p>
+      <p>小さくてもいいので、ユーザーがおのおのの人生を振り返ったときに、あのプロダクト、あのサービスがあってよかったと思っていただけるものをつくります。</p>
+    second_title_html: '絶対に忘れない<br>辞書＆単語帳<br>DiQt（ディクト）'
+    second_description_html: |
+      <p>DiQt（ディクト）は、語学者の抱える『語彙の忘却』という課題を解決する辞書＆単語帳サービスです。</p>
+      <p>７０言語以上の辞書をご用意しており、単語帳としても１０００万以上の累計解答数がございます。</p>
+    blog: 'ブログ'
     web_app: 'Webアプリ'
     ios_app: 'iOSアプリ'
     android_app: 'Androidアプリ'
     chrome_extension: 'Chrome拡張機能'
+    history: '沿革'
     name: 'お名前'
     name_placeholder: 'お名前を入力してください'
     company_name: '会社名'
     company_name_placeholder: '会社名を入力してください'
+    optional: '任意'
+    inquiry_type: 'お問い合わせ種別'
+    about_apps: '弊社のアプリについて'
+    others: 'その他'
+    about_sales: '営業に関するお問い合わせ'
+    inquiry_content: 'お問い合わせ内容'
+    inquire: 'お問い合わせする'

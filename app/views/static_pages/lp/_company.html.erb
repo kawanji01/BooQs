@@ -14,24 +14,24 @@
     <table class="table background-black no-top-border">
       <tbody>
       <tr class="">
-        <th scope="row">社名</th>
-        <td>株式会社BooQs</td>
+        <th scope="row"><%= t('static_pages.company') %></th>
+        <td><%= t('shared.company.name') %></td>
       </tr>
       <tr>
-        <th scope="row">住所</th>
-        <td>埼玉県入間市南峯３９９番６号</td>
+        <th scope="row"><%= t('static_pages.address') %></th>
+        <td><%= t('shared.company.address') %></td>
       </tr>
       <tr>
-        <th scope="row">代表取締役</th>
-        <td>相川真司</td>
+        <th scope="row"><%= t('static_pages.ceo') %></th>
+        <td><%= t('static_pages.ceo_name') %></td>
       </tr>
       <tr>
-        <th scope="row">Email</th>
-        <td>aikawa@booqs.net</td>
+        <th scope="row"><%= t('static_pages.email') %></th>
+        <td><%= t('shared.company.email') %></td>
       </tr>
       <tr>
-        <th scope="row">電話番号</th>
-        <td>090-3510-4353</td>
+        <th scope="row"><%= t('static_pages.phone') %></th>
+        <td><%= t('shared.company.phone') %></td>
       </tr>
       </tbody>
     </table>
@@ -46,10 +46,11 @@
       </div>
       <div class="col-xl-10">
         <h3 class="text-white text-left">
-          相川真司
+          <%= t('static_pages.ceo_name') %>
         </h3>
         <div class="text-light">
-          <p>高校在学中に週刊少年ジャンプで漫画賞を受賞。卒業後、業務用システムの開発を請け負う株式会社ティーワイシーに就職。
+          <p>高校在学中に週刊少年ジャンプで<a href="https://ja.wikipedia.org/wiki/%E3%82%B9%E3%83%88%E3%82%AD%E3%83%B3%E7%82%8E#:~:text=%E5%8F%97%E8%B3%9E%E4%B8%80%E8%A6%A7,-%E5%9B%9E&text=%E3%83%BB%E7%82%8E%E5%8A%AA%E5%8A%9B%E8%B3%9E%20%2D%20%E9%99%BD%E5%9C%B0,%E5%B2%A1%E6%9C%AC%E5%81%A5%E5%A4%AA%E9%83%8E%E3%80%8CMerry%20Crisis!%E3%80%8D&text=%E3%83%BB%E6%BA%96%E3%80%85%E3%83%97%E3%83%AA%E3%83%B3%E3%82%B9%20%2D%20%E6%A1%91%E9%87%8E%E5%9C%AD%E8%BC%9D,%E7%9B%B8%E5%B7%9D%E7%9C%9F%E5%8F%B8%E3%80%8C%E3%83%90%E3%83%83%E3%83%89%E3%82%A8%E3%83%B3%E3%83%89%E3%82%AF%E3%83%A9%E3%83%83%E3%82%B7%E3%83%A5!!%E3%80%8D" target='_blank' rel="noopener" class="link-light">漫画賞</a>を受賞。
+            卒業後、業務用システムの開発を請け負う株式会社ティーワイシーに就職。
             2019年に株式会社BooQs設立し、自身がエンジニアとして英語の技術ドキュメントと格闘する中で痛感した英語の語彙習得と忘却の課題を解決するために「忘れない辞書＆単語帳アプリ」としてDiQt（ディクト）を開発し、Web版・モバイルアプリ版・Chrome拡張版をリリースする。2022年度総務省主催異能vationプログラム「ジェネレーションアワード」ノミネート。</p>
         </div>
 
@@ -85,7 +86,7 @@
 <div class="row mt-5 px-4 justify-content-md-center">
   <div class="col-xl-8">
     <h3 class="pt-5 text-white text-left">
-      沿革
+      <%= t('lp.history') %>
     </h3>
     <div class="text-light mt-4">
       <p>・2019年2月19日創業</p>

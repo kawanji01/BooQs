@@ -9,23 +9,28 @@
     </div>
 
 
-      <nav>
-        <div class="navbar-header">
-          <button id="hamburger" type="button" class="navbar-toggle collapsed">
-            <span class="sr-only">Toggle navigation</span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
-        </div>
-        <ul id="navbar-menu"
-            class="nav navbar-nav navbar-right collapse navbar-collapse">
-          <li><%= link_to t('layouts.home'), '#', id: 'scroll-button-home-page' %></li>
-          <li><%= link_to t('layouts.services'), '#', id: 'scroll-button-services-page' %></li>
-          <li><%= link_to t('layouts.news'), '#', id: 'scroll-button-news-page' %></li>
-          <li><%= link_to t('layouts.company'), '#', id: 'scroll-button-company-page' %></li>
-          <li><%= link_to t('layouts.contact'), '#', id: 'scroll-button-contact-page' %></li>
-        </ul>
-      </nav>
+    <nav>
+      <div class="navbar-header">
+        <button id="hamburger" type="button" class="navbar-toggle collapsed">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+      </div>
+      <ul id="navbar-menu"
+          class="nav navbar-nav navbar-right collapse navbar-collapse">
+        <li><%= link_to t('layouts.home'), '#', id: 'scroll-button-home-page' %></li>
+        <li><%= link_to t('layouts.services'), '#', id: 'scroll-button-services-page' %></li>
+        <li><%= link_to t('layouts.news'), '#', id: 'scroll-button-news-page' %></li>
+        <li><%= link_to t('layouts.company'), '#', id: 'scroll-button-company-page' %></li>
+        <li><%= link_to t('layouts.contact'), '#', id: 'scroll-button-contact-page' %></li>
+        <% if @locale == 'en' %>
+          <li><%= link_to '日本語', root_path(locale: 'ja') %></li>
+        <% else %>
+          <li><%= link_to 'English', root_path(locale: 'en') %></li>
+        <% end %>
+      </ul>
+    </nav>
   </div>
 </header>
