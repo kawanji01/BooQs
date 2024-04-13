@@ -4,9 +4,7 @@
 # セットアップ
 
 ## Dockerをインストール
-- Macなら　https://matsuand.github.io/docs.docker.jp.onthefly/desktop/mac/install/
-- Windowsは分からないので誰か加筆よろしくお願いします。
-
+- https://matsuand.github.io/docs.docker.jp.onthefly/desktop/mac/install/
 
 ## セットアップ方法
 - コンテナをビルド： `docker-compose build`
