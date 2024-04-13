@@ -8,7 +8,7 @@
 
 ## セットアップ方法
 - コンテナをビルド： `docker-compose build`
-- コンテナの起動： `docker-compose up`x
+- コンテナの起動： `docker-compose up`
 - DBとseedをセットアップ： `docker-compose run web rails db:setup`
   - DBを作成： `docker-compose run web rails db:create`
   - DBをmigrate: `docker-compose run web rails db:migrate`
