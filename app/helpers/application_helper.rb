@@ -31,7 +31,7 @@ module ApplicationHelper
         description: :description,
         type: 'website',
         url: request.original_url,
-        image: "#{MAIN_IMAGES_URL}/OGP_BooQs.png",
+        image: "#{MAIN_IMAGES_URL}/BooQs_logo.png",
         locale: locale,
       },
       twitter: {
